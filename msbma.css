@@ -1,0 +1,80 @@
+html, body {
+	user-select: none;
+}
+@keyframes d {
+	from {
+		background-color: #eeeeee;
+	}
+	to {
+		background-color: #c2dea2;
+	}
+}
+button {
+	font-family: sans-serif;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	padding: 5px 5px 5px 5px;
+	font-size: 12px;
+	background-color: #eeeeee;
+	color: #000000;
+	-webkit-transition-duration: 0.3s;
+	-o-transition-duration: 0.3;
+	-moz-transition-duration: 0.3;
+	transition-duration: 0.3s;
+}
+
+textarea, input {
+	background: none;
+	outline: none;
+	resize: none;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 10;
+	border-color: #000000;
+	word-wrap: break-word;
+}
+textarea:hover, input:hover {
+	border-color: #8bc34a;
+}
+button:hover {
+	background-color: #eeeeee;
+	color: #000000;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+button:active {
+	animation-name: d;
+	animation-duration: 0.3s;
+	background-color: #c2dea2;
+	color: #ffffff;
+}
+#login {
+	padding: 10px 10px 10px 10px;
+	max-width: 1000px;
+	width: auto;
+}
+.firstName, .lastName, .email, .password {
+	position: relative;
+	border: none;
+	width: 49%;
+}
+.firstName, .lastName {
+	width: 49%;
+}
+.email, .password {
+	width: 99%;
+	padding: inherit inherit inherit 5px;
+}
+.email > input, .password > input {
+	width: 99%;
+}
+.firstName:hover, .lastName:hover, .email:hover, .password:hover {
+	border-color: #8bc34a;
+}
+
+#fullName {
+	display: flex;
+}
+#back {
+	background-image: url("images/back.png");
+}
